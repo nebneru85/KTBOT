@@ -51,8 +51,8 @@ cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
             bindings = <
 &mo DEFAULT &kp ESC    &kp Q      &kp W      &kp E      &kp R      &kp T                           &kp Y       &kp U       &kp I      &kp O      &kp P      &kp BSLH    &kp BSPC
 &mo LOWER   &kp TAB    &kp A      &kp S      &kp D      &kp F      &kp G                           &kp H       &kp J       &kp K      &kp L      &kp SEMI   &kp TILDE   &trans
-&mo RAISE   &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                           &kp N       &kp M       &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT   &trans
-&trans      &kp LCTRL  &kp LGUI   &kp LALT   &kp BSPC   &kp SPACE  &kp DEL                         &trans      &kp SPACE   &kp RALT   &trans     &trans     &kp RCTRL   &trans
+&mo RAISE   &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                           &trans      &kp N       &kp M      &kp COMMA  &kp DOT    &kp RSHFT   &kp PG_UP
+&trans      &kp LCTRL  &kp LGUI   &trans     &kp LALT   &kp SPACE  &KP ENTER                       &KP ENTER   &kp SPACE   &kp RALT   &trans     &trans     &kp RCTRL   &kp PG_DN
                                                                      
                                                                                    
             >;
@@ -64,10 +64,10 @@ cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
             label = " Lower";
             bindings = <
 
-&trans  &trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSLH   &trans
-&trans  &trans     &trans     &trans     &trans     &trans     &trans                     &kp PG_UP  &kp HOME   &kp UP     &kp END    &trans     &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans     &trans                     &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans     &trans                     &trans     &trans     &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSLH   &KP DIVIDE
+&trans  &trans     &trans     &trans     &trans     &trans     &trans                     &kp HOME   &kp UP     &kp END    &kp N7     &kp N8     &kp N9     &KP MINUS
+&trans  &trans     &trans     &trans     &trans     &trans     &trans                     &kp LEFT   &kp DOWN   &kp RIGHT  &kp N4     &kp N5     &kp N6     &KP PLUS
+&trans  &trans     &trans     &trans     &trans     &trans     &trans                     &trans     &trans     &kp N0     &KP N1     &kp N2     &kp N3     &KP ENTER 
                      
 
         
@@ -80,10 +80,10 @@ cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
             label = " Raise";
             bindings = <
 
-&trans      &trans      &kp F1          &kp F2           &kp F3     &kp F4          &kp F5                 &kp F6       &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12
-&trans      &trans      &rgb_ug RGB_TOG &rgb_ug RGB_EFF  &trans     &rgb_ug RGB_BRD &rgb_ug RGB_BRI        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bootloader  &trans 
-&trans      &trans      &trans          &trans           &trans     &bt BT_NXT      &bt BT_CLR             &trans       &trans       &trans       &trans       &trans       &trans       &trans 
-&sys_reset  &trans      &trans          &trans           &trans     &trans          &trans                 &trans       &kp SPACE    &trans       &trans       &trans       &trans       &sys_reset
+&trans      &trans      &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&trans      &trans      RGBON      RGBTOG     RGBHUI     RGBBRD     RGBBRI                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bootloader   &bt BT_NXT
+&trans      &trans      RGBOFF     RGBSAI     RGBSAD     &bt BT_NXT &bt BT_CLR              &trans        &trans        &trans        &trans        &trans        &trans        &bt BT_CLR
+&sys_reset  &trans      RGBEFF     &trans     &trans     &trans     &trans                  &kp LEFT      &kp SPACE     &kp RIGHT     &kp UP        &kp DOWN      &trans        &sys_reset
                                        
    
             >;
