@@ -74,7 +74,7 @@ cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
             >;
             
             sensor-bindings = <&inc_dec_kp C_FF C_RW &inc_dec_kp C_FF C_RW>;
-        };
+        }; 
 
         raise_layer {
             label = " Raise";
