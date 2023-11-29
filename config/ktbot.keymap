@@ -13,14 +13,14 @@
 // Short versions
 #define RGBON   &rgb_ug RGB_ON
 #define RGBOFF  &rgb_ug RGB_OFF
-#define &RGBTOG  &rgb_ug RGB_TOG
+#define RGBTOG  &rgb_ug RGB_TOG
 #define RGBHUI  &rgb_ug RGB_HUI
 #define RGBHUD  &rgb_ug RGB_HUD
 #define RGBSAI  &rgb_ug RGB_SAI
 #define RGBSAD  &rgb_ug RGB_SAD
 #define RGBBRI  &rgb_ug RGB_BRI
 #define RGBBRD  &rgb_ug RGB_BRD
-#define &RGBEFF  &rgb_ug RGB_EFF
+#define RGBEFF  &rgb_ug RGB_EFF
 
 #define DEFAULT 0
 #define LOWER   1
@@ -81,7 +81,7 @@ cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
             bindings = <
 
 &trans      &trans      &kp F1          &kp F2           &kp F3     &kp F4          &kp F5                 &kp F6       &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12
-&trans      &trans      &RGBTOG         &RGBEFF          &trans     &rgb_ug RGB_BRD &rgb_ug RGB_BRI        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bootloader  &trans 
+&trans      &trans      &rgb_ug RGB_TOG &rgb_ug RGB_EFF  &trans     &rgb_ug RGB_BRD &rgb_ug RGB_BRI        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bootloader  &trans 
 &trans      &trans      &trans          &trans           &trans     &bt BT_NXT      &bt BT_CLR             &trans       &trans       &trans       &trans       &trans       &trans       &trans 
 &sys_reset  &trans      &trans          &trans           &trans     &trans          &trans                 &trans       &kp SPACE    &trans       &trans       &trans       &trans       &sys_reset
                                        
